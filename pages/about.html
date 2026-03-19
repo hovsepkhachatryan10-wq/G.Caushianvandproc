@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="hy">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Գ․Չաուշի անվան միջնակարգ դպրոց</title>
+    <link rel="stylesheet" href="../style/about.css" />
+  </head>
+  <body>
+    <nav class="topbar">
+      <ul class="links">
+        <li><a href="../pages/index.html">Գլխավոր</a></li>
+        <li><a href="../pages/about.html">Մեր մասին</a></li>
+        <li><a href="">Նախագծային աշխատանքներ</a></li>
+      </ul>
+
+      <button class="burger" onclick="toggleNav()">
+        <!-- Hamburger icon -->
+        <svg
+          class="hamburger-icon"
+          width="28"
+          height="28"
+          viewBox="0 0 24 24"
+          fill="none"
+          aria-hidden="true"
+        >
+          <path
+            d="M4 7h16M4 12h16M4 17h16"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+        </svg>
+        <!-- Close (X) icon -->
+        <svg
+          class="close-icon"
+          width="28"
+          height="28"
+          viewBox="0 0 24 24"
+          fill="none"
+          aria-hidden="true"
+        >
+          <path
+            d="M18 6L6 18M6 6l12 12"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+        </svg>
+      </button>
+    </nav>
+
+    <div class="overlay" onclick="closeNav()"></div>
+
+    <aside class="drawer" aria-label="Mobile menu">
+      <a href="../pages/index.html" onclick="closeNav()">Գլխավոր</a>
+      <a href="../pages/about.html" onclick="closeNav()">Մեր մասին</a>
+      <!-- <a href="#" onclick="closeNav()">Ծառայություններ</a>
+      <a href="#" onclick="closeNav()">Կապ</a> -->
+    </aside>
+
+    <header>
+      <section class="sectionOne">
+        <div class="container">
+          <div class="imgwrapwr">
+            <img src="../img/sasunikdp2.webp" alt="School image" />
+          </div>
+          <div class="comtetwraper">
+            <div class="content">
+              <p>
+                Դպրոցը հիմնադրվել է <span class="bold">1964</span> թվականին։ Այնուհետև, Ասիական բանկի
+                ֆինանսավորմամբ, <span class="bold">2023</span> թվականին սկսվել են նոր դպրոցի շինարարական
+                աշխատանքները, և <span class="bold">2025</span> թվականին շահագործման է հանձնվել նոր շենքը։
+              </p>
+            </div>
+          </div>
+        </div> <div class="container">
+          <div class="comtetwraper">
+            <div class="content">
+              <p>
+                Դպրոցի հիմնադիրն է Գալստյան Հովհաննեսը, ով մեծ ներդրում է ունեցել
+                կրթության զարգացման գործում։ 1993 թվականին դպրոցը ստացել է իր
+                անունը՝ անվանակոչվելով ֆիդայապետ Գևորգ Չաուշի պատվին՝ արժևորելով
+                նրա հերոսական կերպարն ու հայրենասիրական գործունեությունը։
+                Տարիների ընթացքում դպրոցը շարունակել է զարգանալ և
+                կատարելագործվել։
+              </p>
+            </div>
+          </div>
+          <div class="imgwrapwr">
+            <img src="../img/hindp.jpg" alt="" />
+          </div>
+        </div>
+
+      </section>
+     
+      <section class="sectionTwoCard">
+        <div class="containerTwoCard">
+          <div class="ContentCards">
+            <div class="card1"></div>
+            <div class="card2"></div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <script>
+      function toggleNav() {
+        document.body.classList.toggle("nav-open");
+      }
+      function closeNav() {
+        document.body.classList.remove("nav-open");
+      }
+    </script>
+  </body>
+</html>

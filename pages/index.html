@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Գ․Չաուշի անվան միջնակարգ դպրոց</title>
+   
+  </head>
+  <link rel="stylesheet" href="../style/about.css" />
+  <link rel="stylesheet" href="../style/home.css" />
+  <body>
+    <nav class="topbar">
+      <ul class="links">
+        <li><a href="../pages/index.html">Գլխավոր</a></li>
+        <li><a href="../pages/about.html">Մեր մասին</a></li>
+        <li><a href="">Նախագծային աշխատանքներ</a></li>
+      </ul>
+
+      <button class="burger" onclick="toggleNav()">
+        <!-- Hamburger icon -->
+        <svg
+          class="hamburger-icon"
+          width="28"
+          height="28"
+          viewBox="0 0 24 24"
+          fill="none"
+          aria-hidden="true"
+        >
+          <path
+            d="M4 7h16M4 12h16M4 17h16"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+        </svg>
+        <!-- Close (X) icon -->
+        <svg
+          class="close-icon"
+          width="28"
+          height="28"
+          viewBox="0 0 24 24"
+          fill="none"
+          aria-hidden="true"
+        >
+          <path
+            d="M18 6L6 18M6 6l12 12"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+        </svg>
+      </button>
+    </nav>
+    <div class="overlay" onclick="closeNav()"></div>
+
+    <aside class="drawer" aria-label="Mobile menu">
+      <a href="../pages/index.html" onclick="closeNav()">Գլխավոր</a>
+      <a href="../pages/about.html" onclick="closeNav()">Մեր մասին</a>
+    </aside>
+
+    <script>
+      function toggleNav() {
+        document.body.classList.toggle("nav-open");
+      }
+      function closeNav() {
+        document.body.classList.remove("nav-open");
+      }
+    </script>
+    <section class="SectionThreeCards">
+      <div class="ContainerThreeCards">
+        <h1 class="title">Գ․Չաուշի անվան միջնակարգ դպրոց</h1>
+
+        <div class="CardsContent">
+          <div class="cards">
+            <img src="../img/istockphoto-1912514194-612x612.jpg" alt="" />
+            <h2>Աշակերտների քանակ</h2>
+            <p>407 աշակերտ</p>
+          </div>
+
+          <div class="cards">
+            <img src="../img/rs.webp" alt="" />
+            <h2>Ուսուցիչների քանակ</h2>
+            <p>51 ուսուցիչ</p>
+          </div>
+
+          <div class="cards">
+            <img src="../img/gr.jpg" alt="" />
+            <h2>Շրջանավարտների քանակ</h2>
+            <p>21 (անցյալ տարվա կտրվացքով)</p>
+          </div>
+
+          <div class="text">
+            <p>Դեպի լավ ապագա։</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
