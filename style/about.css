@@ -23,7 +23,8 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 0 16px;
-  background: var(--nav-bg);
+  /* background: var(--nav-bg); */
+  background: rgb(255 255 255 / 60%);
   color: #fff;
   position: sticky;
   top: 0;
@@ -60,7 +61,7 @@ body {
   height: 44px;
   border: 0;
   background: transparent;
-  color: #fff;
+color: #000000;
   padding: 0;
   cursor: pointer;
 }
